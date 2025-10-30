@@ -2,20 +2,20 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Analyse d’un fichier de logs (TXT)</title>
+<title>Analyse d'un fichier de logs (TXT)</title>
 
 <style>
 body {
     font-family: Arial, sans-serif;
-    background: #F5E5E1;
-    color: #174143;
+    background: #0F172A;
+    color: #E2E8F0;
     margin: 0;
     padding: 0;
 }
 
 h1, h2 {
     text-align: center;
-    color: #174143;
+    color: #60A5FA;
 }
 
 .container {
@@ -27,33 +27,42 @@ table {
     border-collapse: collapse;
     width: 70%;
     margin: 20px auto;
-    background: white;
+    background: #1E293B;
     border-radius: 6px;
     overflow: hidden;
-    border: 2px solid #427A76;
+    border: 2px solid #3B82F6;
 }
 
 th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #334155;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background: #427A76;
-    color: #F5E5E1;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: #F1F5F9;
 }
 
-tr:nth-child(even) { background-color: #F9B48722; }
-tr:hover { background-color: #F9B48755; }
+tr:nth-child(even) { 
+    background-color: #1E293B; 
+}
+
+tr:nth-child(odd) { 
+    background-color: #0F172A; 
+}
+
+tr:hover { 
+    background-color: #334155; 
+}
 
 button {
     display: block;
     margin: 15px auto;
     padding: 10px 20px;
-    background: #427A76;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     border: none;
-    color: #F5E5E1;
+    color: #F1F5F9;
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
@@ -62,19 +71,21 @@ button {
 }
 
 button:hover {
-    background: #F9B487;
-    color: #174143;
+    background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 .report {
     width: 70%;
     margin: 20px auto;
-    background: white;
-    border: 2px solid #427A76;
+    background: #1E293B;
+    border: 2px solid #3B82F6;
     border-radius: 8px;
     padding: 15px;
     line-height: 1.6;
-    color: #174143;
+    color: #E2E8F0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 </style>
 </head>
@@ -83,13 +94,13 @@ button:hover {
 <?php include('menu.php'); ?>
 
 <div class="container">
-<h1>Analyse d’un fichier de logs (TXT)</h1>
+<h1>Analyse d'un fichier de logs (TXT)</h1>
 
 <?php
 $logFile = "access.log";
 
 if (!file_exists($logFile)) {
-    echo "<p style='color:red;text-align:center;'>Introuvable</p>";
+    echo "<p style='color:#EF4444;text-align:center;'>Introuvable</p>";
     exit;
 }
 
@@ -122,7 +133,7 @@ $errorRate = $totalRequests > 0 ? round(($errorCount / $totalRequests) * 100, 2)
 
 $rapport = "RAPPORT LOG\n";
 $rapport .= "Total requêtes : $totalRequests\n";
-$rapport .= "Taux d’erreur : $errorRate %\n\n";
+$rapport .= "Taux d'erreur : $errorRate %\n\n";
 $rapport .= "Hits par chemin :\n";
 foreach ($requestsByPath as $path => $count) {
     $rapport .= "- $path : $count\n";
@@ -137,7 +148,7 @@ file_put_contents("rapport_log.txt", $rapport);
 
 <div class="report">
     <p><strong>Chemin le plus sollicité :</strong> <?php echo $mostUsedPath; ?></p>
-    <p><strong>Taux d’erreur :</strong> <?php echo $errorRate; ?> %</p>
+    <p><strong>Taux d'erreur :</strong> <?php echo $errorRate; ?> %</p>
 
     <h3>Rapport généré</h3>
     <p><strong>Total requêtes :</strong> <?php echo $totalRequests; ?></p>
