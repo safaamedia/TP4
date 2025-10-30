@@ -7,15 +7,15 @@
 <style>
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #0F172A;
-    color: #E2E8F0;
+    background: linear-gradient(135deg, #F8FAFC 0%, #E0E7FF 100%);
+    color: #1E293B;
     margin: 0;
     padding: 0;
 }
 
 h1, h2 {
     text-align: center;
-    color: #60A5FA;
+    color: #6366F1;
     margin-top: 30px;
 }
 
@@ -28,61 +28,62 @@ table {
     border-collapse: collapse;
     width: 80%;
     margin: 20px auto;
-    background: #1E293B;
+    background: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
-    border: 2px solid #3B82F6;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    border: 2px solid #A5B4FC;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
 }
 
 th, td {
-    border: 1px solid #334155;
+    border: 1px solid #E0E7FF;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
-    color: #F1F5F9;
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+    color: #FFFFFF;
     font-size: 16px;
 }
 
 tr:nth-child(even) {
-    background-color: #1E293B;
+    background-color: #F1F5F9;
 }
 
 tr:nth-child(odd) {
-    background-color: #0F172A;
+    background-color: #FFFFFF;
 }
 
 tr:hover {
-    background-color: #334155;
+    background-color: #E0E7FF;
 }
 
 /* Stats box */
 .stats {
-    background: #1E293B;
+    background: #FFFFFF;
     width: 70%;
     margin: 30px auto;
-    border: 2px solid #60A5FA;
+    border: 2px solid #A5B4FC;
     border-radius: 8px;
     padding: 20px;
-    color: #E2E8F0;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    color: #1E293B;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
     line-height: 1.8;
 }
 
 /* Success message */
 .success {
-    color: #F1F5F9;
+    color: #1E293B;
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
-    border: 2px solid #60A5FA;
+    background: linear-gradient(135deg, #FDE68A 0%, #FCD34D 100%);
+    border: 2px solid #FCD34D;
     width: 60%;
     margin: 20px auto;
     padding: 10px;
     border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(252, 211, 77, 0.3);
 }
 </style>
 </head>
