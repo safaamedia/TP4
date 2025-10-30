@@ -7,15 +7,15 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    background: #0F172A;
-    color: #E2E8F0;
+    background: linear-gradient(135deg, #F8FAFC 0%, #E0E7FF 100%);
+    color: #1E293B;
     margin: 0;
     padding: 0;
 }
 
 h1, h2 {
     text-align: center;
-    color: #60A5FA;
+    color: #6366F1;
 }
 
 .container {
@@ -27,42 +27,43 @@ table {
     border-collapse: collapse;
     width: 70%;
     margin: 20px auto;
-    background: #1E293B;
+    background: #FFFFFF;
     border-radius: 6px;
     overflow: hidden;
-    border: 2px solid #3B82F6;
+    border: 2px solid #A5B4FC;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
 }
 
 th, td {
-    border: 1px solid #334155;
+    border: 1px solid #E0E7FF;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
-    color: #F1F5F9;
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+    color: #FFFFFF;
 }
 
 tr:nth-child(even) { 
-    background-color: #1E293B; 
+    background-color: #F1F5F9; 
 }
 
 tr:nth-child(odd) { 
-    background-color: #0F172A; 
+    background-color: #FFFFFF; 
 }
 
 tr:hover { 
-    background-color: #334155; 
+    background-color: #E0E7FF; 
 }
 
 button {
     display: block;
     margin: 15px auto;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
     border: none;
-    color: #F1F5F9;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
@@ -71,21 +72,21 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+    background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
 }
 
 .report {
     width: 70%;
     margin: 20px auto;
-    background: #1E293B;
-    border: 2px solid #3B82F6;
+    background: #FFFFFF;
+    border: 2px solid #A5B4FC;
     border-radius: 8px;
     padding: 15px;
     line-height: 1.6;
-    color: #E2E8F0;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    color: #1E293B;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
 }
 </style>
 </head>
