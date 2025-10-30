@@ -7,81 +7,79 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #F8FAFC 0%, #E0E7FF 100%);
-    color: #1E293B;
+    background: #0F172A;
+    color: #E2E8F0;
     margin: 0;
     padding: 0;
 }
 
 h1, h2 {
     text-align: center;
-    color: #6366F1;
+    color: #60A5FA;
 }
 
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background: #FFFFFF;
-    border: 2px solid #A5B4FC;
+    background: #1E293B;
+    border: 2px solid #3B82F6;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
 }
 
 th, td {
-    border: 1px solid #E0E7FF;
+    border: 1px solid #334155;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: #F1F5F9;
 }
 
 tr:nth-child(even) {
-    background-color: #F1F5F9;
+    background-color: #1E293B;
 }
 
 tr:nth-child(odd) {
-    background-color: #FFFFFF;
+    background-color: #0F172A;
 }
 
 tr:hover {
-    background-color: #E0E7FF;
+    background-color: #334155;
 }
 
 /* Stats section */
 .stats {
     width: 60%;
     margin: 30px auto;
-    background: #FFFFFF;
-    border: 2px solid #A5B4FC;
+    background: #1E293B;
+    border: 2px solid #60A5FA;
     border-radius: 8px;
     padding: 20px;
-    color: #1E293B;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+    color: #E2E8F0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
     text-align: left;
     line-height: 1.8;
 }
 
 .stats h2 {
     text-align: center;
-    color: #6366F1;
+    color: #60A5FA;
 }
 
 .success {
     text-align: center;
-    color: #1E293B;
-    background: linear-gradient(135deg, #FDE68A 0%, #FCD34D 100%);
-    border: 2px solid #FCD34D;
+    color: #F1F5F9;
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+    border: 2px solid #60A5FA;
     width: 60%;
     margin: 20px auto;
     padding: 10px;
     border-radius: 6px;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(252, 211, 77, 0.3);
 }
 </style>
 </head>
