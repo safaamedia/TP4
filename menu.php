@@ -6,23 +6,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #0F172A;
+    background-color: #F8FAFC;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 nav {
-    background: linear-gradient(135deg, #1E293B 0%, #334155 100%);
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
 }
 
 nav h1 {
     font-size: 22px;
-    color: #60A5FA;
+    color: #FDE68A;
     margin: 0;
     letter-spacing: 1px;
 }
@@ -39,7 +39,7 @@ ul.menu li {
 }
 
 ul.menu li a {
-    color: #E2E8F0;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -49,13 +49,13 @@ ul.menu li a {
 }
 
 ul.menu li a:hover {
-    background-color: #60A5FA;
-    color: #0F172A;
+    background-color: #FDE68A;
+    color: #6366F1;
 }
 
 ul.menu li a.active {
-    background-color: #3B82F6;
-    color: #F1F5F9;
+    background-color: #FFFFFF;
+    color: #6366F1;
 }
 </style>
 </head>
