@@ -7,68 +7,74 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    background: #F5E5E1;
-    color: #174143;
+    background: #0F172A;
+    color: #E2E8F0;
     margin: 0;
     padding: 0;
 }
 
 h1, h2 {
     text-align: center;
-    color: #174143;
+    color: #60A5FA;
 }
 
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background: white;
-    border: 2px solid #427A76;
+    background: #1E293B;
+    border: 2px solid #3B82F6;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #334155;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background: #427A76;
-    color: #F5E5E1;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: #F1F5F9;
 }
 
 tr:nth-child(even) {
-    background-color: #F9B48733;
+    background-color: #1E293B;
+}
+
+tr:nth-child(odd) {
+    background-color: #0F172A;
 }
 
 tr:hover {
-    background-color: #F9B48766;
+    background-color: #334155;
 }
 
 /* Stats section */
 .stats {
     width: 60%;
     margin: 30px auto;
-    background: white;
-    border: 2px solid #F9B487;
+    background: #1E293B;
+    border: 2px solid #60A5FA;
     border-radius: 8px;
     padding: 20px;
-    color: #174143;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    color: #E2E8F0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
     text-align: left;
     line-height: 1.8;
 }
 
 .stats h2 {
     text-align: center;
-    color: #174143;
+    color: #60A5FA;
 }
 
 .success {
     text-align: center;
-    color: #174143;
-    background: #F9B48755;
-    border: 2px solid #F9B487;
+    color: #F1F5F9;
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+    border: 2px solid #60A5FA;
     width: 60%;
     margin: 20px auto;
     padding: 10px;
@@ -88,7 +94,7 @@ $rows = [];
 $file = "reservation.csv";
 
 if (!file_exists($file)) {
-    echo "<p style='color:red;text-align:center;'>Le fichier reservation.csv est introuvable.</p>";
+    echo "<p style='color:#EF4444;text-align:center;'>Le fichier reservation.csv est introuvable.</p>";
     exit;
 }
 
@@ -143,7 +149,7 @@ fclose($fparis);
 <div class="stats">
     <h2>Statistiques</h2>
     <p><strong>Nombre de réservations confirmées :</strong> <?php echo $totalConfirmed; ?></p>
-    <p><strong>Chiffre d’affaires total :</strong> <?php echo number_format($totalCA, 2, ',', ' '); ?> DH</p>
+    <p><strong>Chiffre d'affaires total :</strong> <?php echo number_format($totalCA, 2, ',', ' '); ?> DH</p>
     <p><strong>Destination la plus populaire :</strong> <?php echo $topDestination; ?></p>
 </div>
 
