@@ -1,0 +1,12 @@
+RAPPORT LOG
+Total requêtes : 6
+Taux d’erreur : 16.67 %
+
+Hits par chemin :
+- /api/login : 3
+- /api/products : 2
+- /api/checkout : 1
+
+Répartition par code :
+- 200 : 5
+- 401 : 1

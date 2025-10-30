@@ -1,0 +1,6 @@
+[
+    {"titre": "Inception", "annee": 2010, "genre": "Sci-Fi", "duree": 148},
+    {"titre": "Amélie", "annee": 2001, "genre": "Romance", "duree": 122},
+    {"titre": "Parasite", "annee": 2019, "genre": "Thriller", "duree": 132},
+    {"titre": "Interstellar", "annee": 2014, "genre": "Sci-Fi", "duree": 169}
+]

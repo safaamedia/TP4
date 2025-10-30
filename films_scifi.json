@@ -1,0 +1,14 @@
+[
+    {
+        "titre": "Inception",
+        "annee": 2010,
+        "genre": "Sci-Fi",
+        "duree": 148
+    },
+    {
+        "titre": "Interstellar",
+        "annee": 2014,
+        "genre": "Sci-Fi",
+        "duree": 169
+    }
+]
