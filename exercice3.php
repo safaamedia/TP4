@@ -2,20 +2,20 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Gestion d’un catalogue de films (JSON)</title>
+<title>Gestion d'un catalogue de films (JSON)</title>
 
 <style>
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #F5E5E1;
-    color: #174143;
+    background: #0F172A;
+    color: #E2E8F0;
     margin: 0;
     padding: 0;
 }
 
 h1, h2 {
     text-align: center;
-    color: #174143;
+    color: #60A5FA;
     margin-top: 30px;
 }
 
@@ -28,52 +28,57 @@ table {
     border-collapse: collapse;
     width: 80%;
     margin: 20px auto;
-    background: white;
+    background: #1E293B;
     border-radius: 8px;
     overflow: hidden;
-    border: 2px solid #427A76;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #3B82F6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #334155;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background: #427A76;
-    color: #F5E5E1;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: #F1F5F9;
     font-size: 16px;
 }
 
 tr:nth-child(even) {
-    background-color: #F9B48722;
+    background-color: #1E293B;
 }
+
+tr:nth-child(odd) {
+    background-color: #0F172A;
+}
+
 tr:hover {
-    background-color: #F9B48755;
+    background-color: #334155;
 }
 
 /* Stats box */
 .stats {
-    background: white;
+    background: #1E293B;
     width: 70%;
     margin: 30px auto;
-    border: 2px solid #F9B487;
+    border: 2px solid #60A5FA;
     border-radius: 8px;
     padding: 20px;
-    color: #174143;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    color: #E2E8F0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
     line-height: 1.8;
 }
 
 /* Success message */
 .success {
-    color: #174143;
+    color: #F1F5F9;
     font-weight: bold;
     text-align: center;
-    background-color: #F9B48755;
-    border: 2px solid #F9B487;
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+    border: 2px solid #60A5FA;
     width: 60%;
     margin: 20px auto;
     padding: 10px;
@@ -86,20 +91,20 @@ tr:hover {
 <?php include('menu.php'); ?>
 
 <div class="container">
-<h1>Gestion d’un catalogue de films (JSON)</h1>
+<h1>Gestion d'un catalogue de films (JSON)</h1>
 
 <?php
 $jsonFile = "films.json";
 
 if (!file_exists($jsonFile)) {
-    echo "<p style='color:red;text-align:center;'>Le fichier films.json est introuvable.</p>";
+    echo "<p style='color:#EF4444;text-align:center;'>Le fichier films.json est introuvable.</p>";
     exit;
 }
 
 $data = json_decode(file_get_contents($jsonFile), true);
 
 if (!$data) {
-    echo "<p style='color:red;text-align:center;'>Erreur de lecture du fichier JSON.</p>";
+    echo "<p style='color:#EF4444;text-align:center;'>Erreur de lecture du fichier JSON.</p>";
     exit;
 }
 
